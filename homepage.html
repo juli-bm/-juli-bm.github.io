@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAV
+══════════════════════════════ -->
+<nav>
+  <ul>
+    <li><a href="#home">Accueil</a></li>
+    <li class="sep">✿</li>
+    <li><a href="#projects">Projets</a></li>
+    <li class="sep">✿</li>
+    <li><a href="#about">À propos</a></li>
+  </ul>
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <span class="icon"></span>
+  </button>
+</nav>
+
+
+<!-- ══════════════════════════════
+     BANNER
+══════════════════════════════ -->
+<section id="home">
+
+  <!--
+    ✦ THE SPINNING FLOWER
+    A simple SVG flower that rotates slowly via CSS animation.
+    The outer hoop ring stays still — only .flower-spin rotates.
+    To change the speed, edit "18s" in the @keyframes spinSlow above.
+  -->
+  <div class="banner-flower">
+    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Static hoop -->
+      <circle cx="100" cy="100" r="94" stroke="#C45A4E" stroke-width="5" opacity="0.5"/>
+      <circle cx="100" cy="100" r="84" stroke="#C45A4E" stroke-width="1.5" opacity="0.25"/>
+      <rect x="88" y="3" width="24" height="14" rx="3" stroke="#C45A4E" stroke-width="1.8" opacity="0.5"/>
+      <line x1="100" y1="3" x2="100" y2="17" stroke="#C45A4E" stroke-width="1.2" opacity="0.4"/>
+      <!-- Spinning flower -->
+      <g class="flower-spin">
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(45 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(90 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(135 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(180 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(225 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(270 100 100)"/>
+        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(315 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(45 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(90 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(135 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(180 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(225 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(270 100 100)"/>
+        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(315 100 100)"/>
+        <circle cx="100" cy="100" r="14" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
+        <circle cx="100" cy="100" r="6"  fill="#D4713A" opacity="0.8"/>
+      </g>
+    </svg>
+  </div>
+
+  <p class="banner-label">Portfolio — 2026</p>
+  <h1 class="banner-name">Juliette<br>Mouillac</h1>
+  <p class="banner-sub">Étudiante en UX design, en recherche de stage pour Avril 2026</p>
+  <div class="banner-cta">
+    <a href="#projects" class="btn btn-primary">Mes projets</a>
+    <a href="#about"    class="btn btn-outline">À propos de moi</a>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════
+     STITCH DIVIDER
+     (pure CSS — no SVG needed!)
+══════════════════════════════ -->
+<div class="stitch-divider"></div>
+
+
+<!-- ══════════════════════════════
+     PROJECTS
+══════════════════════════════ -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Projets</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- ✦ Each card has a small inline SVG in the corner.
+         They are all the same flower shape, just drawn inline.
+         You can remove the <svg class="card-emb">...</svg> from any card if you want. -->
+
+    <div class="project-card">
+      <!-- 5-petal flower -->
+      <svg class="card-emb" viewBox="0 0 50 50" fill="none">
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+        <circle  cx="25" cy="25" r="5"  fill="#D4713A"/>
+      </svg>
+      <span class="project-num">01</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>Design</span><span>React</span></div>
+    </div>
+
+    <div class="project-card">
+      <!-- daisy / cross stitch X -->
+      <svg class="card-emb" viewBox="0 0 20 20" fill="none">
+        <line x1="2"  y1="2"  x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="18" y1="2"  x2="2"  y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="project-num">02</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>Branding</span><span>Figma</span></div>
+    </div>
+
+    <div class="project-card">
+      <!-- 5-petal flower -->
+      <svg class="card-emb" viewBox="0 0 50 50" fill="none">
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+        <circle  cx="25" cy="25" r="5"  fill="#D4713A"/>
+      </svg>
+      <span class="project-num">03</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>UX</span><span>Research</span></div>
+    </div>
+
+    <div class="project-card">
+      <!-- cross stitch X -->
+      <svg class="card-emb" viewBox="0 0 20 20" fill="none">
+        <line x1="2"  y1="2"  x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="18" y1="2"  x2="2"  y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="project-num">04</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>Mobile</span><span>iOS</span></div>
+    </div>
+
+    <div class="project-card">
+      <!-- 5-petal flower -->
+      <svg class="card-emb" viewBox="0 0 50 50" fill="none">
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+        <ellipse cx="25" cy="9"  rx="5" ry="9"  stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+        <circle  cx="25" cy="25" r="5"  fill="#D4713A"/>
+      </svg>
+      <span class="project-num">05</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>API</span><span>Node.js</span></div>
+    </div>
+
+    <div class="project-card">
+      <!-- cross stitch X -->
+      <svg class="card-emb" viewBox="0 0 20 20" fill="none">
+        <line x1="2"  y1="2"  x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="18" y1="2"  x2="2"  y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="project-num">06</span>
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-desc">Short description of the project, what it does, and the problem it solves.</p>
+      <div class="project-tags"><span>3D</span><span>Three.js</span></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     STITCH DIVIDER
+══════════════════════════════ -->
+<div class="stitch-divider"></div>
+
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about">
+  <div class="about-left">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">À propos</h2>
+    </div>
+    <p class="about-text">
+      Hello ! Je m'appelle <strong style="color:var(--title)">Juliette Mouillac</strong> — Actuellement en dernière année de master web éditorial et stratégie UX, je suis passionnée depuis quelques années par le développement web, plus particulièrement par le processus de recherches et d'études des besoins utilisateurs.
+    </p>
+    <p class="about-text">
+      Quand je ne crée pas des sites web pour mes études, vous pouvez me trouver en train de… Créer&nbsp;:) Que ce soit en mode, en arts, en architecture, ou même dans les jeux vidéos, la créativité est un pilier dans ma vie depuis 2003.
+    </p>
+    <a href="#projects" class="btn btn-primary">Mes projets</a>
+  </div>
+
+  <div class="about-right">
+    <div class="skills-block">
+      <p class="skills-label">Compétences et outils</p>
+      <div class="skills-list">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS/SCSS</span>
+        <span class="skill-tag">Visual Studio Code</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Twig</span>
+        <span class="skill-tag">WordPress</span>
+        <span class="skill-tag">Symfony</span>
+        <span class="skill-tag">Docker</span>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <p class="stat-num">3</p>
+        <p class="stat-desc">Projets réels de sites web et applications</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num">2</p>
+        <p class="stat-desc">Audits complets en environnement professionnel</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num">10+</p>
+        <p class="stat-desc">Wireframes et maquettes conçues</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     STITCH DIVIDER
+══════════════════════════════ -->
+<div class="stitch-divider"></div>
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-left">
+    <p class="footer-name">Juliette Mouillac</p>
+    <div class="availability">Disponible</div>
+    <div class="contact-links">
+      <a href="mailto:mouillacjuliette@gmail.com">
+        <span class="link-label">Email</span>mouillacjuliette@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/juliette-mouillac/" target="_blank">
+        <span class="link-label">LinkedIn</span>linkedin.com/in/juliette-mouillac/
+      </a>
+      <a href="https://github.com/juli-bm" target="_blank">
+        <span class="link-label">GitHub</span>github.com/juli-bm
+      </a>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p>© 2026 Juliette Mouillac</p>
+  </div>
+</footer>
+<script src="js/theme.js"></script>
+</body>
+</html>
