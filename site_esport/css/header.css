@@ -1,0 +1,93 @@
+header{
+    background-color: #01012b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px 0 40px;
+    font-family: "kanit", sans-serif;
+  }
+  
+  #logo {
+    width: 10%
+  }
+  
+  header > a img {
+    width: 100%;
+    padding: 15px 0 15px 0;
+  }
+  
+  
+  .menu-principal{
+    display: flex;
+    margin: 0 ;
+    align-items: center;
+    gap:80px;
+    padding : 0 0 0 150px;
+  }
+  
+  .menu-principal li{
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "kanit", sans-serif;
+  }
+  
+  .menu-principal > li a{
+    text-decoration: none;
+    color: white;
+    width : 105px;
+  }
+  
+  #site-jo{
+    display: flex;
+    align-items: center;
+    background-color: #DE7DCA;
+    padding: 5px 20px 5px 10px;
+  }
+  
+  #site-jo > img{
+    padding: 0 10px 0 0;
+    width: 32px;
+  }
+  
+  .langue img{
+    width: 32px;
+  }
+
+  /** Bouton menu burger **/
+#burger-menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/** Responsive - petits écrans **/
+@media (max-width: 1126px) {
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        background-color: #DE7DCA;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
+        z-index: 10;
+        border-radius: 5px;
+        height: 30em;
+    }
+
+    .menu-principal.active {
+        display: flex;
+    }
+
+    #burger-menu {
+        display: block;
+    }
+}
+
+body{
+  font-family: "inter";
+}

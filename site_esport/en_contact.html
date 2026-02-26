@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/lison.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <script src="js/burger.js" defer></script>
+    <link rel="icon" href="thumbnails_esport.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <header>
+      <a href="en_index.html" id="logo">
+        <img
+          src="images/thumbnails_esport.png"
+          alt=""
+        />
+      </a>
+      <ul class="menu-principal" id="menu-principal">
+        <li>
+          <a href="https://la28.org/?utm_source=web&utm_medium=Organic&utm_campaign=24GenEngagement&utm_term=&utm_content=iocfanfacingpage" id="site-jo">
+            <img
+              src="images/logo_LA.png"
+              alt=""
+            />
+            <div>LA 2028</div>
+          </a>
+        </li>
+        <li><a href="en_events.html">Events</a></li>
+        <li><a href="en_schedule.html">Schedule</a></li>
+        <li><a href="en_contact.html">Contact</a></li>
+        <li><a href="en_news.html">News</a></li>
+      </ul>
+      <a href="contact.html" class="langue">
+        <img
+          src="images/internet.png"
+          alt=""
+      /></a>
+
+      <button id="burger-menu" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    </header>
+    
+<main>
+      <div class="sous-titre">
+        <h2>Contact Form</h2>
+      </div>
+      <section class="display-formul">
+        <div class="formulaire">
+          <div class="container">
+            <form>
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="deroulement">Event details</option>
+                <option value="horaires">Dates and times</option>
+                <option value="places">How to get tickets</option>
+              </select>
+
+              <label for="emailAdress">Email address</label>
+              <input
+                type="email"
+                id="emailAdress"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+
+              <div class="name-fields">
+                <div>
+                  <label for="first-name">First name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="Your first name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="last-name">Last name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Your last name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <label for="message">Your message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87748.07667162905!2d0.2890562653860269!3d46.58471885328682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe72439eb3ab%3A0x97de2319c5e09093!2s86000%20Poitiers!5e0!3m2!1sfr!2sfr!4v1734174356746!5m2!1sfr!2sfr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>          
+          <div>
+          <p>
+            Come visit us at Comeet for any questions about this new adventure!
+          </p>
+          <p>
+            10 rue des Tilleuls
+          </p>
+          <p>
+            86000 Poitiers
+          </p>
+          <p>
+            France
+          </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="logo_footer">
+            <img src="images/logo_blanc.png">
+            </div>
+            <div class="adresse">
+                <h3>Contact Details</h3>
+                <p>10 rue des Tilleuls</p>
+                <p>86000</p>
+                <p>Poitiers</p>
+                <p>France</p>
+            </div>
+            <div class="nav_footer">
+                <h3>Navigation</h3>
+                <p><a href="mentions_legales.html">Legal Notice</a></p>
+                <p><a href="en_contact.html">Contact</a></p>
+                <p><a href="en_news.html">News</a></p>
+                <p><a href="en_faq.html">FAQ</a></p>
+            </div>
+            <div class="reseaux_footer">
+                <h3>Find us on:</h3>
+                <div>
+                    <img
+              src="images/insta_logo.png"
+            />
+            <img
+              src="images/X_logo.png"
+            />
+            <img
+              src="images/link_logo.webp"
+            />
+                </div>
+            </div>
+        </section>
+    </footer>
+  </body>
+</html>

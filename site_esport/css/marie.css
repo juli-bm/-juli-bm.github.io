@@ -1,0 +1,80 @@
+/**ne pas toucher, barre de défilement**/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #de7dca #01012b;
+}
+/****/
+
+body {
+  margin: 0;
+  font-family: "inter", sans-serif;
+  background-color: #01012B;
+}
+
+main {
+  background-color: #01012b;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cats > figure p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+figcaption {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  color: white;
+  text-underline-offset: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.cats {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2em;
+  gap: 20px;
+}
+
+.cats figure:hover {
+  text-decoration: underline white;
+}
+
+.cats > figure img {
+  width: 340px;
+  height: 340px;
+}
+
+.sous-titre h2 {
+  color: white;
+  font-family: "kanit", sans-serif;
+  font-size: 2em;
+  margin: 2em auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 0;
+  text-align: center;
+  background: linear-gradient(to right, #dd4ded, #89e5fa);
+}
+
+.cats figure{
+  margin: 0;
+}

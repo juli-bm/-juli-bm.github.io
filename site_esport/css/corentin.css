@@ -1,0 +1,94 @@
+/**ne pas toucher, barre de défilement**/
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #DE7DCA #01012B;
+}
+/****/
+
+body{
+  background-color: #01012b;
+  font-family: "inter", sans-serif;
+  margin: 0;
+}
+
+main a{
+  margin : 10px 0 10px 0;
+  
+}
+
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main{
+    width: 70%;
+    margin: 1em auto 30px auto;
+
+}
+
+main p{
+  color: white;
+  margin : 20px 0 20px 0;
+}
+
+.border{
+  border: solid 4px #DE7DCA;
+  padding: 10px;
+}
+
+.question{
+  font-size: 1.4rem;
+}
+
+.decouvrir{
+  display :flex;
+  flex-direction:column;
+  margin:auto;
+  text-align:center;
+  width:22%;
+}
+
+.button{
+  background-color:white;
+  text-decoration:none;
+  color:#01012b;
+  border: none;
+  padding: 0.8em 2.8em;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.lien_retour{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+figure{
+  width: 100%;
+  margin: 2em auto 0 auto;
+}
+
+audio{
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sous-titre {
+  margin: 3em auto;
+  padding: 10px 0;
+  text-align: center;
+  background: linear-gradient(to right, #de7dca, #89e5fa);
+  font-family: "kanit", sans-serif;
+}

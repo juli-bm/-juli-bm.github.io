@@ -1,0 +1,56 @@
+/**ne pas toucher, barre de défilement**/
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #DE7DCA #01012B;
+}
+/**/
+
+body {
+  background-color: #01012B;
+}
+
+main {
+    color: white;
+    font-family: "inter", sans-serif;
+    margin: 1em auto 0 auto;
+    width: 70%;
+}
+
+main p {
+  margin : 10px 0 10px 0;
+   
+}
+
+.suite {
+  text-align: center; 
+}
+main .button{
+  background-color:white;
+  text-decoration:none;
+  color:#01012b;
+  border: none;
+  padding: 0.8em 2.8em;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.decouvrir{
+  display :flex;
+  flex-direction:column;
+  margin:auto auto 30px auto;
+  text-align:center;
+  width:35%;
+}
+
+.lien_retour{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.border-article{
+  border: solid 4px #DE7DCA;
+  padding: 10px;
+  margin: 2em 0;
+}

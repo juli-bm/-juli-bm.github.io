@@ -1,0 +1,136 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #de7dca #01012b;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  padding: 0px;
+  margin: auto 0;
+  background-color: #01012B;
+}
+
+main{
+  width: 70%;
+  margin: 0 auto;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #de7dca;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #de7dca;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#subject{
+  border: solid 1px #de7dca;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #de7dca;
+}
+
+.container {
+  /* Ajouter box-sizing */
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin: 0;
+}
+h1 {
+  color: #de7dca;
+  width: 100%;
+}
+
+button{
+  background-color: #01012B;
+  color: #ffffff;
+  border-radius: 4px;
+  border: solid 1px #01012B;
+  padding: 5px;
+}
+
+.sous-titre {
+  margin: 60px auto;
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(to right, #de7dca, #89e5fa);
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "kanit", sans-serif;
+}
+
+.display-formul{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 0 0 2em 0;
+}
+
+.map{
+  display: column;
+  width: 350px;
+}
+
+.map div{
+  color: #01012B;
+  background-color: white;
+  padding: 8px;
+  margin: 2em 0;
+  border-radius: 4px;
+}
+
+p{
+  margin: 1em 0;
+}
+
+.formulaire{
+  display: flex;
+  width: 400px;
+}
+
+.map iframe{
+  width: 350px;
+  height: 350px;
+}

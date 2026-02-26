@@ -1,0 +1,204 @@
+/*----------------------------------- Général -------------------------------------- */
+
+html {
+    font-family: sans-serif;
+    font-size: 12pt;  /* = 16px */
+	line-height: 1.25; /* = 20px */
+    color: black;
+}
+body{
+    background: url(../optim-exercice/optim-images/top_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    counter-reset: chapitre;
+}
+
+/*----------------------------------- Titre -------------------------------------- */
+
+.conteneur-centre{
+    width: 90%;
+    max-width: 55rem;
+    margin: 0 auto;
+
+}
+#entete-principal h1{
+    font-weight: bold;
+    color: #00888b;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.875rem;
+    margin-top: 5.74rem;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.chapitre{
+    margin-top: 3%;
+}
+
+h2{
+    margin-top: 5%;
+    position: relative;
+    counter-increment: chapitre;
+}
+
+/*----------------------------------- Texte -------------------------------------- */
+
+
+p{
+    margin: 10px 0px 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.premier-paragraphe{
+    padding-top: 34rem;
+}
+
+.first::first-letter{
+    font-size: 3rem;
+    color: #1FA698;
+}
+
+/*----------------------------------- Liste -------------------------------------- */
+
+
+nav{
+    justify-content: center;
+    margin: 50px;
+}
+
+.colonne {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 20px;
+    justify-content: center;
+
+}
+.colonne li{
+    display: grid;
+    height: 100px;
+    background-color: #1FA698;
+
+}
+
+.colonne li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap :calc(10px + 20px);
+    grid-template-columns: 40% 40%;
+} */
+
+/* li{
+    width: 100%;
+    padding: 10px;
+    column-gap: 15px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+} */
+
+
+/*----------------------------------- Liens -------------------------------------- */
+
+a{
+    color: #00888b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*----------------------------------- Reste du texte (partie du bas) -------------------------------------- */
+
+section h2{
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+aside{
+    display:flex;
+    background-color: rgb(150, 220, 220);
+    margin: 2rem;
+    padding: 20px;
+    border: 2px solid #0f564f;
+}
+aside img{
+    max-width: 20%;
+}
+aside p{
+    margin-left: 50px;
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+}
+
+ol li{
+    list-style-type: disc;
+    margin: 0px 0px 0px 70px;
+}
+
+/*----------------------------------- footer -------------------------------------- */
+
+.mark{
+    display: flex;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 20px;
+    margin: 5% 15% 20px 15%;
+    padding: 1rem;
+}
+.mark p{
+    margin-left: 20px;
+}
+.gavalda{
+    background-color: transparent;
+}
+div{
+    background-color: rgb(54, 54, 54);
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+}
+
+/*----------------------------------- footer -------------------------------------- */
+h2::before{
+    font-weight: bold;
+    background-color: orangered;
+    content: "Chapitre " counter(chapitre);
+    color: white;
+    display: inline-block;
+    transform: rotate(-10deg);
+    padding: 10px;
+    position: absolute;
+    left: -3%;
+    top: -25px;
+}
+
+
+/*----------------------------------- footer -------------------------------------- */
+nav li:hover{
+    background-color: white;
+}
+
+nav a:hover{
+    color: #00888b;
+    text-decoration: underline;
+}
