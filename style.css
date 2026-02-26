@@ -9,7 +9,7 @@
       --accent:  #C45A4E;
       --surface: #F5EFE4;
       --leaf:    #7A9E6E;
-      --blush:   #E8B89A;
+      --blush:   #d68f63;
       --title:   #C15A30;
       --text:    #3B3A41;
       --muted:   #8A7F76;
@@ -76,7 +76,7 @@
 
     /* flower between nav items */
     nav ul li.sep {
-      color: var(--blush);
+      color: var(--surface);
       font-size: 0.8rem;
       opacity: 0.8;
       user-select: none;
