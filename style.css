@@ -5,7 +5,7 @@
 
     :root {
       --bg:      #EDE5D8;
-      --main:    #D4713A;
+      --main:    #C15A30;
       --accent:  #C45A4E;
       --surface: #F5EFE4;
       --leaf:    #7A9E6E;
@@ -76,7 +76,7 @@
 
     /* flower between nav items */
     nav ul li.sep {
-      color: var(--surface);
+      color: var(--bg);
       font-size: 0.8rem;
       opacity: 0.8;
       user-select: none;
@@ -102,7 +102,7 @@
       transform: scaleX(0);
       transition: transform 0.25s;
     }
-    nav ul li a:hover { color: var(--blush); }
+    nav ul li a:hover { color: var(--surface); }
     nav ul li a:hover::after { transform: scaleX(1); }
 
     #theme-toggle {
