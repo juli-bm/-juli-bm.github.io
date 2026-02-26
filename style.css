@@ -2,6 +2,35 @@
 
     html { scroll-behavior: smooth; }
 
+/* curseur fleur hihi */
+/* ✦ default flower cursor — terracotta on light background */
+:root {
+  --cursor-flower: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 50 50'%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(0 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(45 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(90 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(135 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(180 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(225 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(270 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23D4713A' transform='rotate(315 25 25)'/%3E%3Ccircle cx='25' cy='25' r='7' fill='%23F5EFE4'/%3E%3C/svg%3E") 14 14, pointer;
+
+  /* ✦ light flower cursor — for orange/dark surfaces */
+  --cursor-flower-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 50 50'%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(0 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(45 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(90 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(135 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(180 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(225 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(270 25 25)'/%3E%3Cellipse cx='25' cy='9' rx='6' ry='10' fill='%23F5EFE4' transform='rotate(315 25 25)'/%3E%3Ccircle cx='25' cy='25' r='7' fill='%23D4713A'/%3E%3C/svg%3E") 14 14, pointer;
+}
+
+/* apply default flower everywhere clickable */
+a,
+button,
+.project-card,
+[role="button"] {
+  cursor: var(--cursor-flower) !important;
+}
+
+/* ✦ light flower on orange surfaces (nav, hovered cards, footer) */
+nav a,
+nav button,
+#lang-toggle,
+#theme-toggle,
+.project-card:hover a,
+.project-card:hover button,
+.btn-primary,
+.btn-primary:hover,
+footer a {
+  cursor: var(--cursor-flower-light) !important;
+}
 
     :root {
       --bg:      #EDE5D8;
