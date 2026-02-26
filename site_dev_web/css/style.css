@@ -1,0 +1,325 @@
+/** Fonts **/
+.quantico-regular {
+    font-family: "Quantico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .inter{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.vt323-regular {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/**/  
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #704264 #49243E;
+    box-sizing: border-box;
+  }
+  
+html, body{
+    margin: 0 auto;
+    background-color: #49243E;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    margin: 0 auto;
+    background-color: #49243E;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 2em auto 3em auto;
+    padding: 0;
+    gap: 6em;
+}
+
+.menu li:not(.no-bg){
+    color: #49243E;
+    background-color: #BB8493;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    font-family: "VT323", serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative; /* Pour garder la structure en place */
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: underline;
+    color: #49243E;
+}
+
+.menu li:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.menu img{
+    width: 3em;
+}
+
+.menu .active{
+    border: #fefee3 solid 2px;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.titre-accueil{
+    border: #BB8493 solid 5px;
+    border-radius: 10px;
+    color: #fefee3;
+    text-align: center;
+    margin-top: 4em;
+    font-family: "Quantico", serif;
+    font-size: 1em;
+    padding: 2.7em 0;
+}
+
+.titre-accueil h1{
+    font-family: "VT323", serif;
+    font-size: 3.6em;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    margin: 0.3em auto;
+}
+
+footer h2{
+    font-family: "Quantico";
+    color: #49243E;
+    margin: 0 auto 0 auto;
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: #BB8493;
+    margin: 5em auto 0 auto;
+    text-align: center;
+    padding: 2em 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+
+footer a{
+    margin: 0 auto;
+    color: #49243E;
+    font-family: "quantico", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer img{
+    width: 2em;
+    margin: 0.8em auto;
+}
+
+.retour{
+    text-decoration: underline;
+    color: #fefee3;
+    font-family: "inter", sans-serif;
+}
+
+
+.sous-titre{
+    color: #49243E;
+    border-radius: 10px;
+    background-color: #BB8493;
+    font-family: "Quantico", serif;
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphe{
+    border: #BB8493 solid 5px;
+    border-radius: 10px;
+    background-color: #fefee3;
+    color: #49243E;
+    font-family: "inter", sans-serif;
+    padding: 1em;
+    align-content: center;
+    line-height: 1.5;
+}
+
+p{
+    margin: 0 auto;
+}
+
+.special{
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.domaine{
+    background-color: #fefee3;
+    border-radius: 10px;
+    padding: 1em;
+    font-family: "inter", sans-serif;
+    border: #BB8493 solid 5px;
+    line-height: 1.5;
+    color: #49243E;
+}
+
+.domaine h2 a{
+    display: block;
+    text-align: center;
+    margin: 0 auto 1em auto;
+    color: #49243E;
+}
+
+.deux-blocs{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    width: 100%;
+    border: #BB8493 solid 5px;
+    border-radius: 10px;
+
+}
+
+.deux-blocs img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.deux-blocs .paragraphe{
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+/** Timeline **/
+
+.timeline { /**Tout contenu timeline**/
+  position: relative;
+  width: 100%;
+  margin: 3em auto;
+  padding: 40px 60px;
+  background: #49243E;
+  border: solid 5px #BB8493;
+  border-radius: 12px;
+}
+.timeline:after { /**Barre verticale**/
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 8px;
+  background: #BB8493;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.timeline article { /**Chaque côté**/
+  position: relative;
+  background: #fefee3;
+  width: calc( 50% - 40px );
+  padding: 15px;
+  border-radius: 12px;
+}
+.timeline article + article { 
+  margin-top: 20px;/**Entre chaque article**/
+}
+.timeline article:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc( 100% + 26px ); /**Position ronds sur la barre verticale**/
+  background: #49243E;
+  width: 24px;
+  height: 24px;
+  border: 6px #BB8493 solid;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline article:nth-child(even) {
+  margin-left: calc( 50% + 48px );
+}
+.timeline article:nth-child(even):before {
+  left: auto;
+  right: calc( 100% + 26px );
+}
+
+.timeline article ul {
+  margin: 0;
+  padding: 0;
+}
+.timeline article li {
+  list-style: none;
+  padding: 8px 0;
+}
+.timeline article li:not(:last-child) {
+  border-bottom: 1px #aaa solid;
+}
+.timeline article li span {
+  display: inline-block;
+  width: 110px; /**Largeur 1ère colonne article**/
+  color: #49243E;
+}
+.timeline a{
+    text-decoration: underline;
+    color: black;
+}
+
+.timeline h2{
+    font-family: "Quantico", serif;
+    color: #49243E;
+}
