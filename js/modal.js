@@ -36,30 +36,30 @@ function openModal(card) {
   const link      = card.dataset.link      || '';
   const linkLabel = card.dataset.linkLabel || 'Visiter';
   const pdf       = card.dataset.pdf       || '';
-
+  
   // Fill in text
   modalNum.textContent   = num;
   modalTitle.textContent = title;
-
+  
   // Tags
   modalTags.innerHTML = tags
-    .split(',')
-    .map(t => `<span>${t.trim()}</span>`)
-    .join('');
-
+  .split(',')
+  .map(t => `<span>${t.trim()}</span>`)
+  .join('');
+  
   // Description — supports line breaks with \n
   modalDesc.innerHTML = desc
-    .split('\\n')
-    .map(p => `<p>${p.trim()}</p>`)
-    .join('');
-
+  .split('\\n')
+  .map(p => `<p>${p.trim()}</p>`)
+  .join('');
+  
   // Preview image or placeholder
   if (img) {
     modalPreview.innerHTML = `<img src="${img}" alt="Aperçu ${title}">`;
   } else {
     modalPreview.innerHTML = `<div class="modal-preview-placeholder">Aperçu à venir</div>`;
   }
-
+  
   // Footer buttons
   modalFooter.innerHTML = '';
   if (link) {
@@ -68,7 +68,7 @@ function openModal(card) {
   if (pdf) {
     modalFooter.innerHTML += `<a href="${pdf}" target="_blank" rel="noopener" class="modal-btn outline">Voir le PDF</a>`;
   }
-
+  
   // Open
   overlay.classList.add('is-open');
   document.body.style.overflow = 'hidden'; // prevent background scroll

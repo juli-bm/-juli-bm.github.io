@@ -9,139 +9,139 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li class="sep">✿</li>
-    <li><a href="#projects">Projects</a></li>
-    <li class="sep">✿</li>
-    <li><a href="#about">About</a></li>
-  </ul>
-  <div class="nav-toggles">
-  <button id="theme-toggle" aria-label="Toggle theme">
-    <span class="icon"></span>
-  </button>
-  <a href="../index.html" id="lang-toggle" aria-label="Switch language">
-    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <g clip-path="url(#FR_svg__a)">
-        <path d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12Z"
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li class="sep">✿</li>
+      <li><a href="#projects">Projects</a></li>
+      <li class="sep">✿</li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-toggles">
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon"></span>
+      </button>
+      <a href="../index.html" id="lang-toggle" aria-label="Switch language">
+        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g clip-path="url(#FR_svg__a)">
+            <path d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12Z"
             fill="#F0F0F0" />
-        <path d="M24 12c0-5.16-3.257-9.558-7.826-11.254v22.508C20.744 21.558 24 17.159 24 12Z"
+            <path d="M24 12c0-5.16-3.257-9.558-7.826-11.254v22.508C20.744 21.558 24 17.159 24 12Z"
             fill="#D80027" />
-        <path d="M0 12c0 5.16 3.257 9.559 7.826 11.254V.747C3.256 2.443 0 6.841 0 12.001Z"
+            <path d="M0 12c0 5.16 3.257 9.559 7.826 11.254V.747C3.256 2.443 0 6.841 0 12.001Z"
             fill="#0052B4" />
-    </g>
-    <defs>
-        <clipPath id="FR_svg__a">
-            <path fill="#fff" d="M0 0h24v24H0z" />
-        </clipPath>
-    </defs>
-</svg>
-</a>
-</div>
-<button class="burger" id="burger" aria-label="Menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-</nav>
-
-<!-- ══════════════════════════════
-     BANNER
-══════════════════════════════ -->
-<section id="home">
-
-  <!--
+          </g>
+          <defs>
+            <clipPath id="FR_svg__a">
+              <path fill="#fff" d="M0 0h24v24H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  
+  <!-- ══════════════════════════════
+  BANNER
+  ══════════════════════════════ -->
+  <section id="home">
+    
+    <!--
     ✦ THE SPINNING FLOWER
     A simple SVG flower that rotates slowly via CSS animation.
     The outer hoop ring stays still — only .flower-spin rotates.
     To change the speed, edit "18s" in the @keyframes spinSlow above.
-  -->
-  <div class="banner-flower">
-    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Static hoop -->
-      <circle cx="100" cy="100" r="94" stroke="#C45A4E" stroke-width="5" opacity="0.5"/>
-      <circle cx="100" cy="100" r="84" stroke="#C45A4E" stroke-width="1.5" opacity="0.25"/>
-      <rect x="88" y="3" width="24" height="14" rx="3" stroke="#C45A4E" stroke-width="1.8" opacity="0.5"/>
-      <line x1="100" y1="3" x2="100" y2="17" stroke="#C45A4E" stroke-width="1.2" opacity="0.4"/>
-      <!-- Spinning flower -->
-      <g class="flower-spin">
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(45 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(90 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(135 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(180 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(225 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(270 100 100)"/>
-        <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(315 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(45 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(90 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(135 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(180 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(225 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(270 100 100)"/>
-        <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(315 100 100)"/>
-        <circle cx="100" cy="100" r="14" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
-        <circle cx="100" cy="100" r="6"  fill="#D4713A" opacity="0.8"/>
-      </g>
-    </svg>
-  </div>
-
-  <p class="banner-label">Portfolio — 2026</p>
-  <h1 class="banner-name">Juliette<br>Mouillac</h1>
-  <p class="banner-sub">UX design student, currently seeking an internship starting April 2026.</p>
-  <div class="banner-cta">
-    <a href="#projects" class="btn btn-primary">My projects</a>
-    <a href="#about"    class="btn btn-outline">About me</a>
-  </div>
-
-</section>
-
-<!-- ══════════════════════════════
-     STITCH DIVIDER
-     (pure CSS — no SVG needed!)
-══════════════════════════════ -->
-<div class="stitch-divider"></div>
-
-
-<!-- ══════════════════════════════
-     PROJECTS
-══════════════════════════════ -->
-<section id="projects">
-  <div class="section-header">
-    <span class="section-num">01</span>
-    <h2 class="section-title">Projects</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="projects-grid">
-
-  <div class="project-card"
-    data-num="01"
-    data-title="Olympic Esport"
-    data-tags="HTML, CSS, Storytelling"
-    data-desc="What if Esport became an Olympic discipline? This project was carried out in a group of 5 as part of our Master's degree. We developed the storytelling around the theme of sport.\nI took on the role of web developer for the Comeet agency."
-    data-img="../images/esport-fullpage.png"
-    data-link="../site_esport/Index.html"
-    data-link-label="Visit the site">
-    <svg class="card-emb" viewBox="0 0 50 50" fill="none">
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
-      <circle cx="25" cy="25" r="5" fill="#D4713A"/>
-    </svg>
-    <span class="project-num">01</span>
-    <h3 class="project-title">Olympic Esport</h3>
-    <p class="project-desc">What if Esport became an Olympic discipline?</p>
-    <p class="project-desc">Student project coded as a team by the <b>Comeet</b> agency!</p>
-    <div class="project-tags"><span>HTML</span><span>CSS</span><span>Storytelling</span></div>
-  </div>
-
-  <div class="project-card"
+    -->
+    <div class="banner-flower">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Static hoop -->
+        <circle cx="100" cy="100" r="94" stroke="#C45A4E" stroke-width="5" opacity="0.5"/>
+        <circle cx="100" cy="100" r="84" stroke="#C45A4E" stroke-width="1.5" opacity="0.25"/>
+        <rect x="88" y="3" width="24" height="14" rx="3" stroke="#C45A4E" stroke-width="1.8" opacity="0.5"/>
+        <line x1="100" y1="3" x2="100" y2="17" stroke="#C45A4E" stroke-width="1.2" opacity="0.4"/>
+        <!-- Spinning flower -->
+        <g class="flower-spin">
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(45 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(90 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"  transform="rotate(135 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(180 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(225 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(270 100 100)"/>
+          <ellipse cx="100" cy="46" rx="10" ry="22" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.85" transform="rotate(315 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(45 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(90 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(135 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(180 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(225 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(270 100 100)"/>
+          <circle cx="100" cy="70" r="3" fill="#C45A4E" opacity="0.7" transform="rotate(315 100 100)"/>
+          <circle cx="100" cy="100" r="14" fill="none" stroke="#D4713A" stroke-width="2" opacity="0.9"/>
+          <circle cx="100" cy="100" r="6"  fill="#D4713A" opacity="0.8"/>
+        </g>
+      </svg>
+    </div>
+    
+    <p class="banner-label">Portfolio — 2026</p>
+    <h1 class="banner-name">Juliette<br>Mouillac</h1>
+    <p class="banner-sub">UX design student, currently seeking an internship starting April 2026.</p>
+    <div class="banner-cta">
+      <a href="#projects" class="btn btn-primary">My projects</a>
+      <a href="#about"    class="btn btn-outline">About me</a>
+    </div>
+    
+  </section>
+  
+  <!-- ══════════════════════════════
+  STITCH DIVIDER
+  (pure CSS — no SVG needed!)
+  ══════════════════════════════ -->
+  <div class="stitch-divider"></div>
+  
+  
+  <!-- ══════════════════════════════
+  PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <div class="projects-grid">
+      
+      <div class="project-card"
+      data-num="01"
+      data-title="Olympic Esport"
+      data-tags="HTML, CSS, Storytelling"
+      data-desc="What if Esport became an Olympic discipline? This project was carried out in a group of 5 as part of our Master's degree. We developed the storytelling around the theme of sport.\nI took on the role of web developer for the Comeet agency."
+      data-img="../images/esport-fullpage.png"
+      data-link="../site_esport/Index.html"
+      data-link-label="Visit the site">
+      <svg class="card-emb" viewBox="0 0 50 50" fill="none">
+        <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
+        <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+        <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+        <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+        <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+        <circle cx="25" cy="25" r="5" fill="#D4713A"/>
+      </svg>
+      <span class="project-num">01</span>
+      <h3 class="project-title">Olympic Esport</h3>
+      <p class="project-desc">What if Esport became an Olympic discipline?</p>
+      <p class="project-desc">Student project coded as a team by the <b>Comeet</b> agency!</p>
+      <div class="project-tags"><span>HTML</span><span>CSS</span><span>Storytelling</span></div>
+    </div>
+    
+    <div class="project-card"
     data-num="02"
     data-title="The Mandalorian"
     data-tags="HTML, CSS"
@@ -158,92 +158,92 @@
     <p class="project-desc">My very first HTML/CSS project!</p>
     <div class="project-tags"><span>HTML</span><span>CSS</span></div>
   </div>
-
+  
   <div class="project-card"
-    data-num="03"
-    data-title="Web Developer Career Presentation"
-    data-tags="HTML, CSS"
-    data-desc="I designed this website during my first year of Master's, as part of a Professional Development course. The goal was to create a visual support for an oral presentation about a career of our choice. I chose to highlight the role of web developer — the path I want to pursue."
-    data-img="../images/dev_web_gallery.png"
-    data-link="../site_dev_web/accueil.html"
-    data-link-label="Visit the site">
-    <svg class="card-emb" viewBox="0 0 50 50" fill="none">
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
-      <circle cx="25" cy="25" r="5" fill="#D4713A"/>
-    </svg>
-    <span class="project-num">03</span>
-    <h3 class="project-title">Web Developer Presentation</h3>
-    <p class="project-desc">Career presentation website built as part of my Master's degree.</p>
-    <div class="project-tags"><span>HTML</span><span>CSS</span></div>
-  </div>
+  data-num="03"
+  data-title="Web Developer Career Presentation"
+  data-tags="HTML, CSS"
+  data-desc="I designed this website during my first year of Master's, as part of a Professional Development course. The goal was to create a visual support for an oral presentation about a career of our choice. I chose to highlight the role of web developer — the path I want to pursue."
+  data-img="../images/dev_web_gallery.png"
+  data-link="../site_dev_web/accueil.html"
+  data-link-label="Visit the site">
+  <svg class="card-emb" viewBox="0 0 50 50" fill="none">
+    <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
+    <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+    <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+    <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+    <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+    <circle cx="25" cy="25" r="5" fill="#D4713A"/>
+  </svg>
+  <span class="project-num">03</span>
+  <h3 class="project-title">Web Developer Presentation</h3>
+  <p class="project-desc">Career presentation website built as part of my Master's degree.</p>
+  <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+</div>
 
-  <div class="project-card"
-    data-num="04"
-    data-title="La La Langues"
-    data-tags="WordPress, Project Management, UI Design"
-    data-desc="La La Langues is a real client project for a language training organisation based in Bordeaux. From the visual identity to WordPress development, I was involved in every stage alongside a team of 4. I acted as both project manager and web developer."
-    data-img="../images/wireframe-lalalangues.png"
-    data-link="https://lalalangues.com"
-    data-link-label="Visit the site">
-    <svg class="card-emb" viewBox="0 0 20 20" fill="none">
-      <line x1="2" y1="2" x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="18" y1="2" x2="2" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>
-    <span class="project-num">04</span>
-    <h3 class="project-title">La La Langues</h3>
-    <p class="project-desc">Website for a language training organisation based in Bordeaux.</p>
-    <div class="project-tags"><span>WordPress</span><span>Project Management</span><span>Figma</span></div>
-  </div>
+<div class="project-card"
+data-num="04"
+data-title="La La Langues"
+data-tags="WordPress, Project Management, UI Design"
+data-desc="La La Langues is a real client project for a language training organisation based in Bordeaux. From the visual identity to WordPress development, I was involved in every stage alongside a team of 4. I acted as both project manager and web developer."
+data-img="../images/wireframe-lalalangues.png"
+data-link="https://lalalangues.com"
+data-link-label="Visit the site">
+<svg class="card-emb" viewBox="0 0 20 20" fill="none">
+  <line x1="2" y1="2" x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="18" y1="2" x2="2" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+<span class="project-num">04</span>
+<h3 class="project-title">La La Langues</h3>
+<p class="project-desc">Website for a language training organisation based in Bordeaux.</p>
+<div class="project-tags"><span>WordPress</span><span>Project Management</span><span>Figma</span></div>
+</div>
 
-  <div class="project-card"
-    data-num="05"
-    data-title="Roxy Landing Page"
-    data-tags="WordPress, Storytelling"
-    data-desc="A landing page created as part of a university project. I designed it for a fictional new collection from the online clothing brand Roxy."
-    data-img="../images/page_roxy.png"
-    data-link=""
-    data-link-label="Visit the site">
-    <svg class="card-emb" viewBox="0 0 50 50" fill="none">
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
-      <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
-      <circle cx="25" cy="25" r="5" fill="#D4713A"/>
-    </svg>
-    <span class="project-num">05</span>
-    <h3 class="project-title">Roxy Landing Page</h3>
-    <p class="project-desc">Fictional landing page for a new Roxy collection.</p>
-    <div class="project-tags"><span>WordPress</span><span>Storytelling</span></div>
-  </div>
+<div class="project-card"
+data-num="05"
+data-title="Roxy Landing Page"
+data-tags="WordPress, Storytelling"
+data-desc="A landing page created as part of a university project. I designed it for a fictional new collection from the online clothing brand Roxy."
+data-img="../images/page_roxy.png"
+data-link=""
+data-link-label="Visit the site">
+<svg class="card-emb" viewBox="0 0 50 50" fill="none">
+  <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6"/>
+  <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(72 25 25)"/>
+  <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(144 25 25)"/>
+  <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(216 25 25)"/>
+  <ellipse cx="25" cy="9" rx="5" ry="9" stroke="#D4713A" stroke-width="1.6" transform="rotate(288 25 25)"/>
+  <circle cx="25" cy="25" r="5" fill="#D4713A"/>
+</svg>
+<span class="project-num">05</span>
+<h3 class="project-title">Roxy Landing Page</h3>
+<p class="project-desc">Fictional landing page for a new Roxy collection.</p>
+<div class="project-tags"><span>WordPress</span><span>Storytelling</span></div>
+</div>
 
-  <div class="project-card"
-    data-num="06"
-    data-title="Bloom & Brew"
-    data-tags="Branding"
-    data-desc="Visual identity creation for a fictional organic and ethical coffee brand."
-    data-img="../images/bloom-brew-charte.png"
-    data-link=""
-    data-link-label="Visit the site">
-    <svg class="card-emb" viewBox="0 0 20 20" fill="none">
-      <line x1="2" y1="2" x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="18" y1="2" x2="2" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>
-    <span class="project-num">06</span>
-    <h3 class="project-title">Bloom & Brew</h3>
-    <p class="project-desc">Visual identity for a fictional organic & ethical coffee brand.</p>
-    <div class="project-tags"><span>Branding</span><span>Design</span></div>
-  </div>
-  </div>
+<div class="project-card"
+data-num="06"
+data-title="Bloom & Brew"
+data-tags="Branding"
+data-desc="Visual identity creation for a fictional organic and ethical coffee brand."
+data-img="../images/bloom-brew-charte.png"
+data-link=""
+data-link-label="Visit the site">
+<svg class="card-emb" viewBox="0 0 20 20" fill="none">
+  <line x1="2" y1="2" x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="18" y1="2" x2="2" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+<span class="project-num">06</span>
+<h3 class="project-title">Bloom & Brew</h3>
+<p class="project-desc">Visual identity for a fictional organic & ethical coffee brand.</p>
+<div class="project-tags"><span>Branding</span><span>Design</span></div>
+</div>
+</div>
 </section>
 
 
 <!-- ══════════════════════════════
-     STITCH DIVIDER
+STITCH DIVIDER
 ══════════════════════════════ -->
 <div class="stitch-divider"></div>
 
@@ -262,14 +262,14 @@
     <a href="#projects" class="btn btn-primary">My Projects</a>
     <a href="../pdf/cv_juliette_mouillac.pdf" class="btn btn-outline">My resume</a>
   </div>
-
+  
   <div class="about-right">
     <div class="photo-moi">
-  <div class="photo-stitch">
-    <img src="../images/juli.jpg"
-    alt="photo Juliette Mouillac">
-  </div>
-</div>
+      <div class="photo-stitch">
+        <img src="../images/juli.jpg"
+        alt="photo Juliette Mouillac">
+      </div>
+    </div>
     <div class="skills-block">
       <p class="skills-label">Skills & Tools</p>
       <div class="skills-list">
