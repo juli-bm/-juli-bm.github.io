@@ -42,3 +42,27 @@ window.addEventListener('scroll', function() {
   currentAngle += 0.6;
   flowerSpin.style.transform = 'rotate(' + currentAngle + 'deg)';
 });
+
+// ══════════════════════════════
+// BURGER MENU
+// ══════════════════════════════
+const burger = document.getElementById('burger');
+const navUl  = document.querySelector('nav ul');
+const navToggles = document.querySelector('.nav-toggles');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('is-open');
+  navUl.classList.toggle('is-open');
+  navToggles.classList.toggle('is-open');
+  document.body.style.overflow = burger.classList.contains('is-open') ? 'hidden' : '';
+});
+
+// close menu when a link is clicked
+navUl.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('is-open');
+    navUl.classList.remove('is-open');
+    navToggles.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
+});

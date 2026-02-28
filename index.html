@@ -17,7 +17,8 @@
     <li class="sep">✿</li>
     <li><a href="#about">À propos</a></li>
   </ul>
-  <button id="theme-toggle" aria-label="Toggle theme">
+  <div class="nav-toggles">
+<button id="theme-toggle" aria-label="Toggle theme">
     <span class="icon"></span>
   </button>
   <a href="en/index.html" id="lang-toggle" aria-label="Switch language">
@@ -45,6 +46,12 @@
     </defs>
 </svg>
 </a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 </nav>
 
 <section id="home">
@@ -230,7 +237,6 @@ Chacun devait choisir une série TV à représenter, en gardant l’atmosphère 
      data-link-label="Visiter le site"
     role="button"
     tabindex="0">
->
       <!-- cross stitch -->
       <svg class="card-emb" viewBox="0 0 20 20" fill="none">
         <line x1="2"  y1="2"  x2="18" y2="18" stroke="#D4713A" stroke-width="2.5" stroke-linecap="round"/>
